@@ -38,11 +38,4 @@ contract lec11 {
     1 gwei = 10^9 wei
 
 
-
-
-
-
-
-
-
 */

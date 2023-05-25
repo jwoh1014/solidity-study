@@ -22,7 +22,9 @@ contract lec6 {
         string name;
         uint age;
     }
+    
     mapping(uint256=>Human) public humanMapping;
+    
     Human[] public humanArray;
 
     function createHuman(string memory _name,uint _age) public pure {
@@ -32,6 +34,7 @@ contract lec6 {
     function createHumanInMapping(uint _key,string memory _name,uint _age) public {
         humanMapping[_key] =  Human(_name,_age);
     }
+
     function createHumanInArray(string memory _name,uint _age) public{
         humanArray.push(Human(_name,_age));
     }

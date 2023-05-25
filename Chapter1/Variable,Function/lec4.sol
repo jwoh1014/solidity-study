@@ -11,18 +11,11 @@ contract lec4 {
         - event 이벤트명(자료형 변수명);
             event info(string name, uint256 money);
     
-
-
-    
     */
      
     event info(string  name, uint256 money);
     function fun(string memory name, uint256 money) public {
       emit info(name,money);
     }
-
-
-
-
 
 }

@@ -15,12 +15,12 @@ contract lec10 {
     function assertNow(uint _a) public pure  {
         assert(_a>=5);
     }
-    function revertNow(uint _a) public pure {
+    function revertNow(uint _a) public pure { //특정한 조건에 부합하면 에러 발생시키고
         if(_a>=5){
             revert("Must be more than 5");
         }
     }
-    function requireNow(uint _a) public pure {
+    function requireNow(uint _a) public pure { //특정한 조건에 부합하지 않으면 에러 발생
         require(_a>=5,"Must be more than 5");
     }
 }

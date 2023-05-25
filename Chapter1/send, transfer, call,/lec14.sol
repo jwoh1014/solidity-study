@@ -31,7 +31,7 @@ contract safe{
     }
 
     function checkMybalance() public view returns(uint){
-       return address(this).balance;
+       return address(this).balance; //safe 컨트랙트의 잔액
     }
 
 }  

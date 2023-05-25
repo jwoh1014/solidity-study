@@ -7,7 +7,7 @@ contract lec19{
     uint public a = 0;
     uint public max = 2**256-1;
     function becomeOverflow(uint _num1,uint _num2) public  {
-        a = _num1.add(_num2);
+        a = SafeMath(_num1, _num2)
        
     } 
 }

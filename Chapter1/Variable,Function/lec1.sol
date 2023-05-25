@@ -11,8 +11,8 @@ contract lec1 {
         uint public a = 3;
         a=4;
 
-        uint public constant b=3;
-        b=4 
+        uint public constant b=3; -> 상수
+        b=4 -> 에러남
 
         자료형 타입
         값 타입 Vs 참조 타입
@@ -48,7 +48,7 @@ contract lec1 {
     uint public a = 1;
     int public b = -1;
     bool public c = true;
-    bytes1 public d = hex"11";
+    bytes1 public d = hex"11"; //1 바이트는 8비트고 하나의 문자는 4비트이다
     string public e = "abcd";
 
     //산술 연산자 : +,-,*,/
